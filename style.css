@@ -1,0 +1,172 @@
+@font-face{
+    font-family: 'hansen';
+    src: url(HankenGrotesk-VariableFont_wght.ttf)
+}
+
+*{
+    font-family: 'hansen';
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf1fe;
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 2em;
+    background-color: white;
+    
+}
+
+.result,.summary{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result{
+    border-radius: 2em;
+    background: linear-gradient(to bottom,#6c47fd,#362fec);
+    color: white;
+}
+
+.circle{
+    background-color: blue;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,#4a23c7,#4838ef);
+}
+
+.result h1,p{
+    color: #d1c8fe;
+}
+
+h1{
+    font-size: 18px;
+    margin: 1.5em;
+}
+
+
+h2{
+    font-size: 54px;
+    padding: 0;
+    margin: 0;
+}
+
+.circle p{
+    margin: 0;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 0 ;
+    margin-top:1.5em;
+}
+p{
+    text-align: center;
+}
+
+.resultp{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.summary h1{
+    align-self: flex-start;
+    padding-left: 1em;
+}
+
+.scorecard{
+    border-radius: 0.5em;
+    padding: 0.9em;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+button{
+    border-radius: 4em;
+    background-color: #303a58;
+    padding:0.9em;
+    width: 80%;
+    margin: 1em;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+button:hover{
+    background-color: #4637ef;
+    border: none;
+}
+
+.reaction{
+    background-color:#fff5f6 ;
+}
+
+.memory{
+    background-color: #fff9f3;
+}
+
+.verbal{
+    background-color:#f1fcf8 ;
+}
+
+.visual{
+    background-color:#f3f3fd ;
+}
+
+.r{
+    color:#ff5555 ;
+}
+
+.m{
+    color:#ffb21e ;
+}
+
+.vi{
+    color:#1125d6;
+}
+
+.ve{
+    color:#00bb8f ;
+}
+
+
+
+span{
+    display: flex;
+    align-items: center;    
+}
+
+strong{
+    padding-right:0.5em;
+}
+
+svg{
+    margin-right: 0.9em;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+}
